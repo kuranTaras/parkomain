@@ -1,0 +1,112 @@
+.about {
+  display: flex;
+  padding-left: 136px;
+  padding-right: 230px;
+  background: url("../img/3.png") repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  @media (max-width: 1899px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (max-width: 1549px) {
+    padding-left: 96px;
+    padding-right: 60px;
+  }
+  @media (max-width: 1249px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100vh;
+  }
+  @media (max-width: 999px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__left {
+    display: flex;
+    @media (max-width: 999px) {
+      display: none;
+    }
+    .svg-1440 {
+      display: none;
+      @media (max-width: 1549px) {
+        display: block;
+      }
+    }
+    .svg-1920 {
+      @media (max-width: 1549px) {
+        display: none;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    max-width: 864px;
+    margin-left: auto;
+    margin-top: 150px;
+    @media (max-width: 1549px) {
+      max-width: 757px;
+      margin-top: 51px;
+    }
+    @media (max-width: 1399px) {
+      max-width: 600px;
+    }
+    @media (max-width: 1249px) {
+      max-width: 500px;
+    }
+    @media (max-width: 999px) {
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+  &-title {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 150%;
+    /* identical to box height, or 105px */
+
+    text-transform: uppercase;
+
+    /* Grayscale/Black */
+
+    color: #333333;
+    margin-bottom: 50px;
+    @media (max-width: 1549px) {
+      margin-bottom: 40px;
+      font-size: 50px;
+    }
+    @media (max-width: 999px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 759px) {
+      font-size: 20px;
+    }
+  }
+  &-p {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    /* or 33px */
+
+
+    /* Grayscale/Black */
+
+    color: #333333;
+    @media (max-width: 1549px) {
+      font-size: 18px;
+    }
+    @media (max-width: 1249px) {
+      font-size: 16px;
+    }
+    @media (max-width: 759px) {
+      font-size: 14px;
+    }
+  }
+}

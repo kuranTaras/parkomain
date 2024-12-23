@@ -1,0 +1,109 @@
+.feed {
+  display: flex;
+  align-items: center;
+  padding-left: 230px;
+  padding-right: 153px;
+  justify-content: space-between;
+  @media (max-width: 1549px) {
+    padding-left: 173px;
+    padding-right: 106px;
+  }
+  @media (max-width: 1249px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (max-width: 999px) {
+    height: 100vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: normal;
+  }
+  @media (max-width: 759px) {
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+  }
+  &__left {
+    max-width: 864px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1549px) {
+      margin-right: 30px;
+    }
+    @media (max-width: 999px) {
+      margin-right: 0;
+      margin-top: 245px;
+    }
+    @media (max-width: 759px) {
+      margin-top: 0;
+    }
+  }
+  &-title {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 150%;
+    /* identical to box height, or 105px */
+
+    text-transform: uppercase;
+
+    /* Grayscale/Black */
+
+    color: #333333;
+    @media (max-width: 1549px) {
+      font-size: 50px;
+    }
+    @media (max-width: 999px) {
+      font-size: 30px;
+    }
+    @media (max-width: 759px) {
+      font-size: 20px;
+    }
+  }
+  &-p {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+
+
+    /* Grayscale/Black */
+
+    color: #333333;
+    margin: 50px 0;
+    @media (max-width: 1549px) {
+      font-size: 18px;
+      margin: 40px 0;
+    }
+    @media (max-width: 999px) {
+      font-size: 14px;
+      margin: 30px 0;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+  .btn {
+    margin-right: auto;
+  }
+  &__right {
+    display: flex;
+    @media (max-width: 999px) {
+      display: none;
+    }
+    .svg-1920 {
+      @media (max-width: 1549px) {
+        display: none;
+      }
+    }
+    .svg-1440 {
+      display: none;
+      @media (max-width: 1549px) {
+        display: block;
+      }
+    }
+  }
+}

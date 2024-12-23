@@ -1,0 +1,212 @@
+.hero {
+  display: grid;
+  grid-template-columns: 826fr 1094fr;
+  height: 100vh;
+  padding-top: 100.5px;
+  //height: calc(100vh - 100.5px);
+  background: url("../img/3.png") repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 1549px) {
+    grid-template-columns: 623fr 817fr;
+    //height: calc(100vh - 92.5px);
+    padding-top: 92.5px;
+  }
+  @media (max-width: 999px) {
+    display: flex;
+    flex-direction: column;
+    //height: calc(100vh - 84.5px);
+    padding-top: 84.5px;
+  }
+  @media (max-width: 759px) {
+    //height: calc(100vh - 75px);
+    padding-top: 75px;
+    height: 90vh;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding: 104px 30px 0 80px;
+    @media (max-width: 1549px) {
+      padding: 55px 66px 0 60px;
+    }
+    @media (max-width: 999px) {
+      padding: 40px 33px;
+    }
+    @media (max-width: 759px) {
+      padding: 30px 21px;
+    }
+  }
+  &-title {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 173px;
+    line-height: 90%;
+    /* or 156px */
+
+
+    /* Grayscale/Black */
+
+    color: #333333;
+    @media (max-width: 1549px) {
+      font-size: 106px;
+    }
+    @media (max-width: 999px) {
+      font-size: 70px;
+    }
+    @media (max-width: 759px) {
+      font-size: 36px;
+    }
+    br {
+      @media (max-width: 999px) {
+        display: none;
+      }
+    }
+  }
+  &-p {
+    font-family: 'Noto Sans Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    /* or 33px */
+
+
+    /* Grayscale/Black */
+
+    color: #333333;
+    margin: 61px 0 50px 0;
+    @media (max-width: 1549px) {
+      font-size: 18px;
+      margin: 50px 0 40px 0;
+      max-width: 420px;
+    }
+    @media (max-width: 999px) {
+      margin: 30px 0;
+      max-width: 432px;
+      font-size: 14px;
+    }
+  }
+  .btn {
+    margin-right: auto;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 999px) {
+      flex-grow: 1;
+    }
+    &-img {
+      display: flex;
+      flex-grow: 1;
+      position: static;
+      width: 100%;
+      @media (max-width: 999px) {
+        position: relative;
+      }
+      img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        width: 100vw;
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 100vh;
+        transition-duration: 2s;
+        object-fit: cover;
+        @media (max-width: 999px) {
+          width: 100%;
+          top: 0!important;
+          max-width: 100%;
+          max-height: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &-items {
+      background: #3A4354;
+      backdrop-filter: blur(2px);
+      display: grid;
+      grid-template-columns: 292px 243px;
+      padding: 90px 0 90px 150px;
+      grid-gap: 30px 155px;
+      @media (max-width: 1549px) {
+        padding: 23px 158px 23px 112px;
+        grid-gap: 20px 88px;
+        grid-template-columns: 250fr 209fr;
+      }
+      @media (max-width: 1399px) {
+        padding: 23px 50px;
+      }
+      @media (max-width: 1249px) {
+        grid-gap: 20px;
+      }
+      @media (max-width: 999px) {
+        padding: 50px 120px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+      @media (max-width: 759px) {
+        padding: 26px 16px;
+        grid-gap: 20px 16px;
+      }
+    }
+    &-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &:hover {
+        svg {
+          transform: rotateZ(-90deg);
+        }
+      }
+      svg {
+        transition-duration: .4s;
+        @media (max-width: 1549px) {
+          width: 44px;
+          min-width: 44px;
+          height: 44px;
+        }
+        @media (max-width: 1249px) {
+          width: 34px;
+          min-width: 34px;
+          height: 34px;
+        }
+        @media (max-width: 999px) {
+          width: 24px;
+          min-width: 24px;
+          height: 24px;
+        }
+      }
+      span {
+        font-family: 'Noto Sans Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 49px;
+        /* identical to box height */
+
+
+        /* Grayscale/White */
+
+        color: #FFFFFF;
+        margin-left: 15px;
+        @media (max-width: 1549px) {
+          font-size: 30px;
+          line-height: 41px;
+        }
+        @media (max-width: 1249px) {
+          font-size: 22px;
+          line-height: 27px;
+        }
+        @media (max-width: 999px) {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
